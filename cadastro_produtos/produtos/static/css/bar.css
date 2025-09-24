@@ -1,0 +1,21 @@
+/* Base Bar */
+
+body {
+    background-color: #f8f9fa;
+}
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+.form-section {
+    background: #fff;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    margin-top: 40px;
+}
+footer {
+    margin-top: 40px;
+    text-align: center;
+    color: #6c757d;
+}
