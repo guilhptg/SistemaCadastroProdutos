@@ -4,7 +4,7 @@
 
 Este projeto foi criado como parte de um estudo prático sobre o desenvolvimento de aplicações web escaláveis e bem organizadas com o framework Django, aplicando conceitos de CRUD (Create, Read, Update, Delete) em um ambiente interativo e responsivo. Para a matéria de **Técnicas de Desenvolvimento de Algoritimos do CTS em Análise e Desenvolviento de Sistemas**
 
-![Screenshot da Aplicação](path/to/your/screenshot.png)
+![Screenshot da Aplicação](/images/cadastro.png)
 _**Nota:** Faça o upload da sua imagem para o repositório e substitua `path/to/your/screenshot.png` pelo caminho correto._
 
 ---
