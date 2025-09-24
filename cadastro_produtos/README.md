@@ -5,7 +5,7 @@
 Este projeto foi criado como parte de um estudo prático sobre o desenvolvimento de aplicações web escaláveis e bem organizadas com o framework Django, aplicando conceitos de CRUD (Create, Read, Update, Delete) em um ambiente interativo e responsivo. Para a matéria de **Técnicas de Desenvolvimento de Algoritimos do CTS em Análise e Desenvolviento de Sistemas**
 
 ![Screenshot da Aplicação](/images/cadastro.png)
-_**Nota:** Faça o upload da sua imagem para o repositório e substitua `path/to/your/screenshot.png` pelo caminho correto._
+_**Nota:** Layout do aplicatico de de registro de produtos
 
 ---
 
@@ -59,7 +59,7 @@ Antes de começar, você vai precisar ter instalado em sua máquina:
 
 1.  **Clone o repositório:**
     ```bash
-    git clone [https://github.com/seu-usuario/seu-repositorio.git](https://github.com/seu-usuario/seu-repositorio.git)
+    git clone https://github.com/guilhptg/SistemaCadastroProdutos
     cd seu-repositorio
     ```
 
@@ -117,7 +117,7 @@ Este projeto tem um grande potencial de expansão. Algumas ideias para futuras i
 
 ## ✒️ Autor
 
-Projeto desenvolvido por **[Seu Nome Completo]**.
+Projeto desenvolvido por **Guilherme Portugal**.
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/seu-usuario/)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/seu-usuario)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/guilhptg/)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/guilhptg)
