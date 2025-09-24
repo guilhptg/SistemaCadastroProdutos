@@ -31,9 +31,9 @@ class Produto(models.Model):
         default="UN"
     )
     
-    estoque_atual = models.DecimalField(max_digits=10, decimal_places=2, default=0)
-    estoque_minimo = models.DecimalField(max_digits=10, decimal_places=2, default=0)
-    estoque_maximo = models.DecimalField(max_digits=10, decimal_places=2, default=100)
+    estoque_atual = models.IntegerField(default=0)
+    estoque_minimo = models.IntegerField(default=0)
+    estoque_maximo = models.IntegerField(default=0)
     data_cadastro = models.DateTimeField(auto_now_add=True)
     data_atualizacao = models.DateTimeField(auto_now=True)
     ativo = models.BooleanField(default=True)
