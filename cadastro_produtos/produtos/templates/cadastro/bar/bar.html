@@ -1,0 +1,60 @@
+{% extends 'cadastro/bar/base/_bar.html' %}
+{% load static %}
+
+{% block title %}Gestão de Produtos - Portal da Chapada{% endblock title %}
+
+{% block content %}
+{% include "cadastro/bar/crud_bar/cadastro_produto.html" %}
+
+    <!-- Exibição de Mensagens -->
+    {% if messages %}
+        <div class="mb-3">
+            {% for message in messages %}
+                <div class="alert {% if message.tags == 'success' %}alert-success{% else %}alert-danger{% endif %}">
+                    {{ message }}
+                </div>
+            {% endfor %}
+        </div>
+    {% endif %}
+
+    <!-- Abas -->
+    <ul class="nav nav-tabs" id="produtoTabs" role="tablist">
+        <li class="nav-item">
+            <button class="nav-link active" id="produtos-tab" data-bs-toggle="tab" data-bs-target="#produtos" type="button">Produtos</button>
+        </li>
+        <li class="nav-item">
+            <button class="nav-link" id="categorias-tab" data-bs-toggle="tab" data-bs-target="#categorias" type="button">Categorias</button>
+        </li>
+        <li class="nav-item">
+            <button class="nav-link" id="estoque-tab" data-bs-toggle="tab" data-bs-target="#estoque" type="button">Estoque</button>
+        </li>
+    </ul>
+
+    <div class="tab-content mt-3">
+        <!-- Aba Produtos -->
+        <div class="tab-pane fade show active" id="produtos" role="tabpanel">
+            {% include "cadastro/bar/tabs/_tab_produtos.html" %}
+        </div>
+
+        <!-- Aba Categorias -->
+        <div class="tab-pane fade" id="categorias" role="tabpanel">
+            {% include "cadastro/bar/tabs/_tab_categorias.html" %}
+        </div>
+
+        <!-- Aba Estoque -->
+        <div class="tab-pane fade" id="estoque" role="tabpanel">
+            {% include "cadastro/bar/tabs/_tab_estoque.html" %}
+        </div>
+    </div>
+</div>
+
+{% include "cadastro/bar/modais/_add_produto.html" %}
+{% include "cadastro/bar/modais/_editar_produto.html" %}
+{% comment %} {% include "cadastro/bar/modais/_add_categoria.html" %}
+{% include "cadastro/bar/modais/_edit_categoria.html" %}
+{% include "cadastro/bar/modais/_add_estoque.html" %}
+{% include "cadastro/bar/modais/_edit_estoque.html" %} {% endcomment %}
+{% endblock content %}
+{% block extra_js %}
+<script src="{% static "js/bar/_editar_produto.js" %}"></script>
+{% endblock extra_js %}
