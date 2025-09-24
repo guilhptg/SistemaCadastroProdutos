@@ -1,0 +1,32 @@
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Produto</th>
+            <th>Estoque Atual</th>
+            <th>Mínimo</th>
+            <th>Máximo</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for p in produtos %}
+        <tr>
+            <td>{{ p.nome }}</td>
+            <td>{{ p.estoque_atual }}</td>
+            <td>{{ p.estoque_minimo }}</td>
+            <td>{{ p.estoque_maximo }}</td>
+            <td>
+                {% if p.estoque_atual < p.estoque_minimo %}
+                    <span class="badge bg-danger">Baixo</span>
+                {% elif p.estoque_atual > p.estoque_maximo %}
+                    <span class="badge bg-warning">Excedente</span>
+                {% else %}
+                    <span class="badge bg-success">OK</span>
+                {% endif %}
+            </td>
+        </tr>
+        {% empty %}
+        <tr><td colspan="5" class="text-center">Nenhum produto registrado no estoque.</td></tr>
+        {% endfor %}
+    </tbody>
+</table>
