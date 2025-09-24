@@ -1,9 +1,7 @@
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-        <a class="navbar-brand" href="{% url 'produto_list' %}">🍹 Bar ERP</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-    </div>
+<nav class="navbar">
+    <ul>
+        <li><a href="{% url 'home' %}">Início</a></li>
+        <li><a href="{% url 'produtos:lista' %}">Produtos</a></li>
+        <li><a href="{% url 'produtos:cadastro' %}">Cadastro</a></li>
+    </ul>
 </nav>
