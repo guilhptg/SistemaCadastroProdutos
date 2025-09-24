@@ -37,7 +37,7 @@ class Produto(models.Model):
     
     class Meta:
         unique_together = ('nome', 'categoria')
-        ordering = ['name'] 
+        ordering = ['nome'] 
         verbose_name = "Produto"
         verbose_name_plural = "Produtos"
         
