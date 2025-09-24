@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>{% block title %}Sistema do Portal da Chapada{% endblock title %}</title>
+        <link rel="stylesheet" href="{% static 'css/bar.css' %}">
+        {% block extra_css %}{% endblock %}
+    </head>
+    <body>
+
+
+        {% block content %}
+        {% endblock content %}
+
+        <footer>
+            <p>© 2025 - Sistema de Cadastro de Produtos - SinteseSigma</p>
+        </footer>
+
+        <!-- Custom JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="{% static 'js/bar.js' %}"></script>
+
+        {% block extra_js %}{% endblock %}
+        
+    </body>
+</html>
