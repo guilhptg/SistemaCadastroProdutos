@@ -27,10 +27,21 @@
                     {% endif %}
                 </td>
                 <td class="text-center">
-                    <!-- Editar -->
-                    <a href="{% url 'editar_produto' produto.id %}" class="btn btn-sm btn-warning">
+                    <button type="button" class="btn bg-gray btn-sm edit-produto-btn"
+                            data-bs-toggle="modal"
+                            data-bs-target="#editProdutoModal"
+                            data-url="{% url 'editar_produto' produto.id %}"
+                            data-nome="{{ produto.nome }}"
+                            data-categoria="{{ produto.categoria.id }}"
+                            data-unidade_medida="{{ produto.unidade_medida }}"
+                            data-preco_custo="{{ produto.preco_custo|stringformat:'s' }}" data-preco_venda="{{ produto.preco_venda|stringformat:'s' }}"
+                            data-qnt_volume="{{ produto.qnt_volume }}" data-unidade_medida="{{ produto.unidade_medida }}"
+                            data-estoque_atual="{{ produto.estoque_atual|stringformat:'s' }}"
+                            data-estoque_minimo="{{ produto.estoque_minimo|stringformat:'s' }}"
+                            data-estoque_maximo="{{ produto.estoque_maximo|stringformat:'s' }}"
+                            data-ativo="{{ produto.ativo|yesno:'true,false' }}">
                         Editar
-                    </a>
+                    </button>
                     <!-- Excluir -->
                     <a href="{% url 'excluir_produto' produto.id %}" 
                         class="btn btn-sm btn-danger"
