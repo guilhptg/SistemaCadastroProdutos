@@ -2,7 +2,7 @@
 
 > Um sistema web completo para cadastro e administração de produtos, desenvolvido com Django. Ideal para pequenas empresas, bares ou restaurantes que precisam de um controle de estoque e catálogo de produtos eficiente e intuitivo.
 
-Este projeto foi criado como parte de um estudo prático sobre o desenvolvimento de aplicações web escaláveis e bem organizadas com o framework Django, aplicando conceitos de CRUD (Create, Read, Update, Delete) em um ambiente interativo e responsivo. Para a matéria de **Técnicas de Desenvolvimento de Algoritimos do CTS em Análise e Desenvolviento de Sistemas**
+Este projeto foi criado como parte de um estudo prático sobre o desenvolvimento de aplicações web escaláveis e bem organizadas com o framework Django, aplicando conceitos de CRUD (Create, Read, Update, Delete) em um ambiente interativo e responsivo.
 
 ![Screenshot da Aplicação](/images/cadastro.png)
 _**Nota:** Layout do aplicatico de de registro de produtos
